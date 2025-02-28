@@ -13,14 +13,20 @@
     <!-- Swiper.js JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Sidebar -->
     <div class="sidebar">
         <ul>
             <li><a href="#hero"><i class="fas fa-home"></i> <span>Accueil</span></a></li>
             <li><a href="#aPropos"><i class="fas fa-id-badge"></i> <span>À propos</span></a></li>
             <li><a href="#competences"><i class="fas fa-code"></i> <span>Compétences</span></a></li>
+            <li><a href="#veille"><i class="fas fa-binoculars"></i> <span>Veille Techno</span></a></li> <!-- Nouvel élément -->
             <li><a href="#projets"><i class="fas fa-folder-open"></i> <span>Projets</span></a></li>
             <li><a href="#contact"><i class="fas fa-phone"></i> <span>Contact</span></a></li>
+            <li>
+                <a href="#" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                    <span>Dark Mode</span>
+                </a>
+            </li>
         </ul>
     </div>
 
@@ -119,20 +125,91 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projets" class="projects-section">
-            <h2>Mes Projets</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <img src="project1.jpg" alt="Projet 1">
-                    <h3>Projet 1</h3>
-                    <p>Description du projet.</p>
+        <!-- Projet 1 -->
+        <section id="projets">
+        <section id="projet1" class="project-section" style="background-image: url('connexion.png');">
+            <div class="project-overlay">
+                <h2>Projet Fournil</h2>
+                <div class="project-content">
+                    <p>Projets qui consiste à la création d'un site internet permettant la création de commande pour une boulangerie.</p>
                     <a href="#" class="btn">Voir le projet</a>
                 </div>
-                <!-- Add more projects here -->
             </div>
         </section>
 
+        <!-- Projet 2 -->
+        <section id="projet2" class="project-section" style="background-image: url('projet2-background.jpg');">
+            <div class="project-overlay">
+                <h2>Projet 2</h2>
+                <div class="project-content">
+                    <p>Description du projet 2.</p>
+                    <a href="#" class="btn">Voir le projet</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projet 3 -->
+        <section id="projet3" class="project-section" style="background-image: url('projet3-background.jpg');">
+            <div class="project-overlay">
+                <h2>Projet 3</h2>
+                <div class="project-content">
+                    <p>Description du projet 3.</p>
+                    <a href="#" class="btn">Voir le projet</a>
+                </div>
+            </div>
+        </section>
+    </section>
+        <!-- Veille Technologique Section -->
+        <section id="veille" class="veille-section">
+            <div class="veille-content">
+                <h2>Veille Technologique : Electron.js</h2>
+                <div class="veille-text">
+                    <h3>Qu'est-ce qu'Electron.js ?</h3>
+                    <p>
+                        Electron.js est un framework open-source qui permet de développer des applications desktop multiplateformes en utilisant des technologies web (HTML, CSS, JavaScript). Il est basé sur Node.js et Chromium, ce qui permet aux développeurs de créer des applications riches en fonctionnalités pour Windows, macOS et Linux.
+                    </p>
+                    <div class="veille-text">
+                        <h3>Architecture d'Electron.js</h3>
+                        <p>
+                            Electron.js repose sur une architecture modulaire qui sépare le processus principal (Main Process) des processus de rendu (Renderer Process). Voici un schéma simplifié de son fonctionnement :
+                        </p>
+                        <div class="schema-container">
+                            <img src="schéma.png" alt="Architecture d'Electron.js" class="schema-image">
+                            <div class="schema-annotations">
+                                <div class="annotation" style="top: 10%; left: 20%;" data-tooltip="Module : Gère les fonctionnalités principales."></div>
+                                <div class="annotation" style="top: 30%; left: 50%;" data-tooltip="Main Process : Gère les processus principaux de l'application."></div>
+                                <!-- Ajoutez d'autres annotations ici -->
+                            </div>
+                            <p class="schema-caption">Schéma de l'architecture d'Electron.js</p>
+                        </div>
+                    <h3>Pourquoi Electron.js ?</h3>
+                    <p>
+                        Electron.js est largement utilisé pour des applications populaires comme Visual Studio Code, Slack, et Discord. Il permet de réutiliser des compétences en développement web pour créer des applications desktop, ce qui en fait un outil puissant et polyvalent.
+                    </p>
+                    <h3>Mes Ressources de Veille</h3>
+                    <ul>
+                        <li><strong>Site officiel</strong> : <a href="https://www.electronjs.org/" target="_blank">electronjs.org</a></li>
+                        <li><strong>GitHub</strong> : <a href="https://github.com/electron/electron" target="_blank">Dépôt Electron.js</a></li>
+                        <li><strong>Blogs</strong> : Articles sur Medium et Dev.to.</li>
+                        <li><strong>Communauté</strong> : Forums et discussions sur Stack Overflow et Reddit.</li>
+                    </ul>
+                    <h3>Dernières Tendances</h3>
+                    <ul>
+                        <li>Intégration de nouvelles APIs pour améliorer les performances.</li>
+                        <li>Amélioration de la sécurité avec des mises à jour régulières.</li>
+                        <li>Utilisation croissante dans les outils de développement et de collaboration.</li>
+                    </ul>
+                    <div class="card">
+                        <img src="article1.png" alt="Image de l'article">
+                        <div class="card-content">
+                            <h3>React Native vs Electron: Best Choice for App Development</h3>
+                            <p>Discover the differences between React Native vs Electron and find out which framework is best for your app development needs.</p>
+                            <a href="https://medium.com/codeinflutter/react-native-vs-electron-best-choice-for-app-development-241f6b456bc7" target="_blank" class="btnAr">Lire l'article</a>
+                        </div>
+                    </div>
+                </div>
+                
+        </section>
         <!-- Contact Section -->
         <section id="contact" class="contact-section">
             <h2>Contact</h2>

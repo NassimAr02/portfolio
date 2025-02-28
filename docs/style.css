@@ -211,21 +211,35 @@ body.light-mode {
 
 /* Projects Section */
 .projects-section {
-    padding: 40px 20px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    color: white;
     text-align: center;
-    background-color: #2d2d2d;
-    border-radius: 8px;
-    margin-top: 40px;
 }
 
+/* Overlay pour améliorer la lisibilité du texte */
+.project-overlay {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Project Grid */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    margin-top: 20px;
 }
 
+/* Project Card */
 .project-card {
-    background-color: #1e1e1e;
+    background-color: rgba(255, 255, 255, 0.1); /* Fond légèrement transparent */
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -234,14 +248,7 @@ body.light-mode {
 
 .project-card:hover {
     transform: translateY(-10px);
-}
-
-.project-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.2); /* Fond plus clair au survol */
 }
 
 .project-card h3 {
@@ -254,6 +261,19 @@ body.light-mode {
     margin-bottom: 15px;
 }
 
+/* Bouton */
+.btn {
+    background-color: #4ec9b0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3aa89b;
+}
 /* Contact Section */
 .contact-section {
     padding: 40px 20px;
@@ -284,4 +304,137 @@ body.light-mode {
 
 .social-links a:hover {
     color: #3aa89b;
+}
+/* Veille Technologique Section */
+.veille-section {
+    padding: 60px 20px;
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    margin-top: 40px;
+    color: #d4d4d4;
+}
+
+.veille-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.veille-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4ec9b0;
+}
+
+.veille-text h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #4ec9b0;
+}
+
+.veille-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.veille-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.veille-text ul li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.veille-text a {
+    color: #4ec9b0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.veille-text a:hover {
+    color: #3aa89b;
+}
+/* Annotations */
+.schema-annotations {
+    position: relative;
+}
+
+.annotation {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #4ec9b0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.annotation:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.schema-image {
+    animation: fadeIn 1s ease-in-out;
+}
+.card {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #4ec9b0;
+}
+
+.card-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+.btnAr {
+    background-color: #4ec9b0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btnAr:hover {
+    background-color: #3aa89b;
 }
