@@ -1,4 +1,4 @@
-/* Style général */
+/* General Styles */
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -8,7 +8,12 @@ body {
     transition: background-color 0.3s ease;
 }
 
-/* Barre latérale façon IDE */
+body.light-mode {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Sidebar */
 .sidebar {
     width: 80px;
     background-color: #252526;
@@ -70,7 +75,7 @@ body {
     opacity: 1;
 }
 
-/* Contenu principal */
+/* Main Content */
 .contenu {
     margin-left: 80px;
     padding: 20px;
@@ -82,12 +87,38 @@ body {
     margin-left: 250px;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    color: #4ec9b0;
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #4ec9b0, #2d2d2d);
+    color: white;
+    padding: 100px 20px;
     text-align: center;
-    font-weight: 700;
 }
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #4ec9b0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3aa89b;
+}
+
+/* About Section */
 .about-section {
     display: flex;
     align-items: center;
@@ -107,60 +138,32 @@ header h1 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Section "À propos" */
-.about-text {
-    flex-grow: 1;
-}
-
 .about-text h2 {
     font-size: 2rem;
     margin-bottom: 10px;
     color: #4ec9b0;
 }
 
-.about-text p  {
+.about-text p {
     font-size: 1.1rem;
     line-height: 1.8;
 }
-.veille-section{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
-    background-color: #2d2d2d;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-.veille-text{
-    flex-grow: 1;
-}
-.veille-text h2{
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #4ec9b0;
-}
-.veille-text p {
-    font-size: 1.1rem;
-    line-height: 1.8
-}
-/* Section compétences */
+
+/* Skills Section */
 .skills-section {
     padding: 40px 20px;
     text-align: center;
-    background-color:  #2d2d2d;
+    background-color: #2d2d2d;
     border-radius: 8px;
     margin-top: 40px;
 }
 
-/* Swiper Container */
 .swiper {
     width: 80%;
     max-width: 900px;
     margin: 0 auto;
 }
 
-/* Slides */
 .swiper-slide {
     background-color: #1e1e1e;
     padding: 20px;
@@ -170,21 +173,32 @@ header h1 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Images des compétences */
 .swiper-slide img {
     width: 80px;
     height: 80px;
     margin-bottom: 15px;
 }
 
-/* Titre des compétences */
 .swiper-slide h3 {
     font-size: 1.2rem;
     color: #f0f0f0;
     margin-top: 10px;
 }
 
-/* Effet au survol */
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4ec9b0;
+    border-radius: 5px;
+}
+
 .swiper-slide:hover {
     transform: translateY(-10px);
     background-color: #3e434d;
@@ -193,4 +207,81 @@ header h1 {
 
 .swiper-slide:hover h3 {
     color: #2ecc71;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #4ec9b0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #3aa89b;
 }
