@@ -1,0 +1,196 @@
+/* Style général */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    transition: background-color 0.3s ease;
+}
+
+/* Barre latérale façon IDE */
+.sidebar {
+    width: 80px;
+    background-color: #252526;
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+    transition: width 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.sidebar:hover {
+    width: 250px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: left;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a i {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.sidebar ul li a:hover {
+    color: #4ec9b0;
+}
+
+.sidebar ul li a span {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sidebar:hover ul li a span {
+    display: inline-block;
+    opacity: 1;
+}
+
+/* Contenu principal */
+.contenu {
+    margin-left: 80px;
+    padding: 20px;
+    width: calc(100% - 80px);
+    transition: margin-left 0.3s ease;
+}
+
+.sidebar:hover ~ .contenu {
+    margin-left: 250px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #4ec9b0;
+    text-align: center;
+    font-weight: 700;
+}
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.about-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Section "À propos" */
+.about-text {
+    flex-grow: 1;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #4ec9b0;
+}
+
+.about-text p  {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+.veille-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.veille-text{
+    flex-grow: 1;
+}
+.veille-text h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #4ec9b0;
+}
+.veille-text p {
+    font-size: 1.1rem;
+    line-height: 1.8
+}
+/* Section compétences */
+.skills-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color:  #2d2d2d;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+/* Swiper Container */
+.swiper {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Slides */
+.swiper-slide {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Images des compétences */
+.swiper-slide img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+/* Titre des compétences */
+.swiper-slide h3 {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    margin-top: 10px;
+}
+
+/* Effet au survol */
+.swiper-slide:hover {
+    transform: translateY(-10px);
+    background-color: #3e434d;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.swiper-slide:hover h3 {
+    color: #2ecc71;
+}
