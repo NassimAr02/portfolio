@@ -427,7 +427,7 @@ body.light-mode {
     font-size: 1rem;
     margin-bottom: 15px;
 }
-.btnAr {
+/* .btn {
     background-color: #4ec9b0;
     color: white;
     padding: 10px 20px;
@@ -436,6 +436,6 @@ body.light-mode {
     transition: background-color 0.3s ease;
 }
 
-.btnAr:hover {
+.btn:hover {
     background-color: #3aa89b;
-}
+} */
