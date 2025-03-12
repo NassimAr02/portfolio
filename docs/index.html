@@ -18,8 +18,10 @@
             <li><a href="#hero"><i class="fas fa-home"></i> <span>Accueil</span></a></li>
             <li><a href="#aPropos"><i class="fas fa-id-badge"></i> <span>À propos</span></a></li>
             <li><a href="#competences"><i class="fas fa-code"></i> <span>Compétences</span></a></li>
-            <li><a href="#veille"><i class="fas fa-binoculars"></i> <span>Veille Techno</span></a></li> <!-- Nouvel élément -->
+            <li><a href="#veille"><i class="fas fa-binoculars"></i> <span>Veille Techno</span></a></li>
             <li><a href="#projets"><i class="fas fa-folder-open"></i> <span>Projets</span></a></li>
+            <li><a href="#cv"><i class="fas fa-file"></i> <span>CV</span></a></li>
+            <li><a href="#diplome"><i class="fas fa-graduation-cap"></i> <span>Diplôme</span></a></li>
             <li><a href="#contact"><i class="fas fa-phone"></i> <span>Contact</span></a></li>
             <li>
                 <a href="#" id="theme-toggle">
@@ -52,6 +54,15 @@
                         <br>Grâce à ma formation en BTS, j’ai acquis des bases solides en développement logiciel, en administration de systèmes réseaux et en gestion de base de données. <br>A l’occasion des divers stages en entreprise que j’ai effectué, j’ai eu l’opportunité de travailler sur la conception d’un logiciel de calcul de bilan énergétique à l’aide du framework Electons JS. <br>Mais également lors de ma formation, j’ai pu acquérir des compétences en programmation objet (C#, Java), en développement Web (CodeIgniter, Angular) et en développement mobile (Ionic).
                     </p>
                 </div>
+            </div>
+        </section>
+        
+        <!-- CV Section -->
+        <section id="cv" class="cv-section">
+            <h2>Mon CV</h2>
+            <div class="cv-content">
+                <p>Téléchargez mon CV pour en savoir plus sur mon parcours professionnel.</p>
+                <a href="Nassim arrass (5).pdf" class="btn" download>Télécharger mon CV</a>
             </div>
         </section>
 
@@ -124,6 +135,8 @@
                 <div class="swiper-button-next"></div>
             </div>
         </section>
+
+        <!-- Projects Section -->
         <section id="projets">
             <!-- Projet 1 -->
             <section id="projet1" class="project-section" style="background-image: url('connexion.png');">
@@ -164,12 +177,12 @@
                     <h2>Projet Stage 2  BCE</h2>
                     <div class="project-content">
                         <p>Développement d'une application de bureau permettant la simulation de bilan de consommation énergétique pour l'entreprise FAR Energy .</p>
-                        <a href="https://github.com/NassimAr02/BCE_FAR_ENERGY/releases/download/install/bce.Setup.1.1.0.exe" class="btn" download>Voir le projet</a>
+                        <a href="https://github.com/NassimAr02/BCE_FAR_ENERGY/releases/download/1.1.1/bce-1.1.1.Setup.exe" class="btn" download>Voir le projet</a>
                     </div>
                 </div>
             </section>
         </section>
-        
+
         <!-- Veille Technologique Section -->
         <section id="veille" class="veille-section">
             <div class="veille-content">
@@ -203,6 +216,7 @@
                         <li><strong>GitHub</strong> : <a href="https://github.com/electron/electron" target="_blank">Dépôt Electron.js</a></li>
                         <li><strong>Blogs</strong> : Articles sur Medium et Dev.to.</li>
                         <li><strong>Communauté</strong> : Forums et discussions sur Stack Overflow et Reddit.</li>
+                        <li><strong>Aggrégateur de flux RSS</strong> : <a href="https://www.inoreader.com/dashboard"> Inoreader</a></li>
                     </ul>
                     <h3>Dernières Tendances</h3>
                     <ul>
@@ -220,17 +234,30 @@
                     </div>
                     <br>
                     <div class="card">
-                        <a href="https://medium.com/codeinflutter/react-native-vs-electron-best-choice-for-app-development-241f6b456bc7" target="_blank"><img src="neutralino.jpg" alt="Lire l'article" ></a>
+                        <a href="https://www.lemondeinformatique.fr/actualites/lire-le-framework-neutralino-une-alternative-a-electron-et-nwjs-78339.html#:~:text=Neutralino%2C%20le%20framework%20de%20développement,js%20de%20GitHub." target="_blank"><img src="neutralino.jpg" alt="Lire l'article" ></a>
                         <div class="card-content">
                             <h3>Le framework Neutralino, une alternative à Electron et NW.js ?</h3>
                             <p>Le framework expérimental, Neutralino, pour le développement d'applications multiplateformes avec JavaScript promet une empreinte légère et peut se passer de Node.js.</p>
                             
                         </div>
+
                     </div>
+                    <br>
+                    <div class="card">
+                        <a href="https://medium.com/@nikitinsn6/electron-vs-net-maui-and-other-frameworks-which-one-is-right-for-your-desktop-application-951c34028ccd" target="_blank"><img src="aef3726f-8085-41c9-9a2e-971db33130a2.webp" alt="Lire l'article"></a>
+                        <div class="card-content">
+                            <h3>Electron vs. .NET MAUI and Other Frameworks: Which One is Right for Your Desktop Application?</h3>
+                            <p>DElectron has become a popular choice for building cross-platform desktop applications, thanks to its ability to leverage web technologies like HTML, CSS, and JavaScript. However, with the emergence of new frameworks like .NET MAUI, developers now have more options to choose from when building desktop apps. So, which one is right for your project?</p>
+                            
+                        </div>
                     
                 </div>
                 
         </section>
+
+
+        
+
         <!-- Contact Section -->
         <section id="contact" class="contact-section">
             <h2>Contact</h2>
@@ -285,6 +312,8 @@
                 icon.classList.add('fa-sun');
             }
         });
+
+        // Scroll Animations
         document.addEventListener('scroll', function() {
             const sections = document.querySelectorAll('.project-section');
             sections.forEach(section => {

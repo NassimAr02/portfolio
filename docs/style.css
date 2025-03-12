@@ -91,25 +91,25 @@ body.light-mode {
 .hero-section {
     background: linear-gradient(135deg, #4ec9b0, #2d2d2d);
     color: white;
-    padding: 100px 20px;
+    padding: 150px 20px;
     text-align: center;
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 20px;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 30px;
 }
 
 .btn {
     background-color: #4ec9b0;
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 15px 30px;
+    border-radius: 8px;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
@@ -123,39 +123,72 @@ body.light-mode {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
+    gap: 40px;
+    padding: 40px;
     background-color: #2d2d2d;
-    border-radius: 8px;
-    margin-top: 20px;
+    border-radius: 12px;
+    margin-top: 40px;
 }
 
 .about-image {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+    flex: 1;
 }
 
 .about-text h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
     color: #4ec9b0;
 }
 
 .about-text p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.8;
+    margin-bottom: 30px;
 }
 
+/* CV Section */
+.cv-section, .diplome-section {
+    margin-top: 30px;
+}
+
+.cv-section h3, .diplome-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #4ec9b0;
+}
+
+.cv-section p, .diplome-section p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.cv-section .btn, .diplome-section .btn {
+    background-color: #4ec9b0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cv-section .btn:hover, .diplome-section .btn:hover {
+    background-color: #3aa89b;
+}
 /* Skills Section */
 .skills-section {
-    padding: 40px 20px;
+    padding: 80px 20px;
     text-align: center;
     background-color: #2d2d2d;
-    border-radius: 8px;
-    margin-top: 40px;
+    border-radius: 12px;
+    margin-top: 60px;
 }
 
 .swiper {
@@ -166,43 +199,43 @@ body.light-mode {
 
 .swiper-slide {
     background-color: #1e1e1e;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 30px;
+    border-radius: 12px;
     text-align: center;
     transition: transform 0.3s ease, background-color 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .swiper-slide img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 15px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
 }
 
 .swiper-slide h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #f0f0f0;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .progress-bar {
     width: 100%;
-    height: 10px;
+    height: 12px;
     background-color: #333;
-    border-radius: 5px;
-    margin: 10px 0;
+    border-radius: 6px;
+    margin: 15px 0;
 }
 
 .progress {
     height: 100%;
     background-color: #4ec9b0;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 .swiper-slide:hover {
-    transform: translateY(-10px);
+    transform: translateY(-15px);
     background-color: #3e434d;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
 }
 
 .swiper-slide:hover h3 {
@@ -215,57 +248,10 @@ body.light-mode {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 100px 20px;
+    padding: 150px 20px;
     color: white;
     text-align: center;
-    margin-bottom: 20px; /* Espace entre les projets */
-}
-
-/* Overlay pour améliorer la lisibilité du texte */
-.project-overlay {
-    position: relative;
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
-    padding: 40px 20px;
-    border-radius: 8px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Project Content */
-.project-content {
-    text-align: left;
-}
-
-.project-content h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #4ec9b0;
-}
-
-.project-content p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-/* Bouton */
-.btn {
-    background-color: #4ec9b0;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #3aa89b;
-}
-.project-section {
-    background-attachment: fixed;
-}
-.project-section {
+    margin-bottom: 40px;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -275,13 +261,55 @@ body.light-mode {
     opacity: 1;
     transform: translateY(0);
 }
-/* Contact Section */
-.contact-section {
-    padding: 40px 20px;
+
+.project-overlay {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 60px 20px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.project-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #4ec9b0;
+}
+
+.project-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* CV Section */
+.cv-section, .diplome-section {
+    padding: 80px 20px;
     text-align: center;
     background-color: #2d2d2d;
-    border-radius: 8px;
-    margin-top: 40px;
+    border-radius: 12px;
+    margin-top: 60px;
+}
+
+.cv-content, .diplome-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cv-content p, .diplome-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #2d2d2d;
+    border-radius: 12px;
+    margin-top: 60px;
 }
 
 .contact-info {
@@ -290,64 +318,65 @@ body.light-mode {
 }
 
 .contact-info p {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 .social-links a {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 15px;
     color: #4ec9b0;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
 .social-links a:hover {
     color: #3aa89b;
 }
+
 /* Veille Technologique Section */
 .veille-section {
-    padding: 60px 20px;
+    padding: 80px 20px;
     background-color: #2d2d2d;
-    border-radius: 8px;
-    margin-top: 40px;
+    border-radius: 12px;
+    margin-top: 60px;
     color: #d4d4d4;
 }
 
 .veille-content {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     text-align: left;
 }
 
 .veille-text h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
     color: #4ec9b0;
 }
 
 .veille-text h3 {
-    font-size: 1.5rem;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
     color: #4ec9b0;
 }
 
 .veille-text p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.8;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .veille-text ul {
     list-style-type: disc;
     padding-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .veille-text ul li {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.8;
 }
 
@@ -360,6 +389,7 @@ body.light-mode {
 .veille-text a:hover {
     color: #3aa89b;
 }
+
 /* Annotations */
 .schema-annotations {
     position: relative;
@@ -367,8 +397,8 @@ body.light-mode {
 
 .annotation {
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     background-color: #4ec9b0;
     border-radius: 50%;
     cursor: pointer;
@@ -377,16 +407,17 @@ body.light-mode {
 .annotation:hover::after {
     content: attr(data-tooltip);
     position: absolute;
-    top: 20px;
+    top: 25px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #333;
     color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.9rem;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 1rem;
     white-space: nowrap;
 }
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -395,47 +426,36 @@ body.light-mode {
 .schema-image {
     animation: fadeIn 1s ease-in-out;
 }
+
 .card {
     background-color: #1e1e1e;
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
     transition: transform 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-15px);
 }
 
 .card img {
     width: 100%;
-    height: 150px;
+    height: 200px;
     object-fit: cover;
 }
 
 .card-content {
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
 
 .card-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
     color: #4ec9b0;
 }
 
 .card-content p {
-    font-size: 1rem;
-    margin-bottom: 15px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
-/* .btn {
-    background-color: #4ec9b0;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #3aa89b;
-} */
