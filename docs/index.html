@@ -131,213 +131,213 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projets">
-            <!-- Projet 1 -->
-            <section id="projet1" class="project-section" style="background-image: url('connexion.png');">
-                <div class="project-overlay">
-                    <h2>Projet Fournil</h2>
-                    <div class="project-content">
-                        <p>Création d'un site internet permettant la gestion de commandes pour une boulangerie.</p>
-                        <a href="http://localhost:8088/FournilAlsacien/" class="btn">Voir le projet</a>
-                    </div>
-                </div>
-            </section>
-        
-            <!-- Projet 2 -->
-            <section id="projet2" class="project-section" style="background-image: url('FCOSK06.png');">
-                <div class="project-overlay">
-                    <h2>Projet Stage 1 - Gestion Licence</h2>
-                    <div class="project-content">
-                        <p>Développement d'une application de gestion de licences des membres du F.C.O.S.K 06 .</p>
-                        <a href="http://localhost:8088/projetFCOSK06/" class="btn">Voir le projet</a>
-                    </div>
-                </div>
-            </section>
-        
-            <!-- Projet 3 -->
-            <section id="projet3" class="project-section" style="background-image: url('image2.png');">
-                <div class="project-overlay">
-                    <h2>Projet Criée</h2>
-                    <div class="project-content">
-                        <p>Application de gestion des ventes aux enchères pour l'organisation la criée des cornouailles.</p>
-                        <a href="#" class="btn">Voir le projet</a>
-                    </div>
-                </div>
-            </section>
-        
-            <!-- Projet 4 -->
-            <section id="projet4" class="project-section" style="background-image: url('far.png');">
-                <div class="project-overlay">
-                    <h2>Projet Stage 2  BCE</h2>
-                    <div class="project-content">
-                        <p>Développement d'une application de bureau permettant la simulation de bilan de consommation énergétique pour l'entreprise FAR Energy .</p>
-                        <a href="https://github.com/NassimAr02/BCE_FAR_ENERGY/releases/download/1.1.1/bce-1.1.1.Setup.exe" class="btn" download>Voir le projet</a>
-                    </div>
-                </div>
-            </section>
-        </section>
-
-        <!-- Veille Technologique Section -->
-        <section id="veille" class="veille-section">
-            <div class="veille-content">
-                <h2>Veille Technologique : Electron.js</h2>
-                <div class="veille-text">
-                    <h3>Qu'est-ce qu'Electron.js ?</h3>
-                    <p>
-                        Electron.js est un framework open-source qui permet de développer des applications desktop multiplateformes en utilisant des technologies web (HTML, CSS, JavaScript). Il est basé sur Node.js et Chromium, ce qui permet aux développeurs de créer des applications riches en fonctionnalités pour Windows, macOS et Linux.
-                    </p>
-                    <div class="veille-text">
-                        <h3>Architecture d'Electron.js</h3>
-                        <p>
-                            Electron.js repose sur une architecture modulaire qui sépare le processus principal (Main Process) des processus de rendu (Renderer Process). Voici un schéma simplifié de son fonctionnement :
-                        </p>
-                        <div class="schema-container">
-                            <img src="schéma.png" alt="Architecture d'Electron.js" class="schema-image">
-                            <div class="schema-annotations">
-                                <div class="annotation" style="top: 10%; left: 20%;" data-tooltip="Module : Gère les fonctionnalités principales."></div>
-                                <div class="annotation" style="top: 30%; left: 50%;" data-tooltip="Main Process : Gère les processus principaux de l'application."></div>
-                                <!-- Ajoutez d'autres annotations ici -->
+                <!-- Projects Section -->
+                <section id="projets">
+                    <!-- Projet 1 -->
+                    <section id="projet1" class="project-section" style="background-image: url('connexion.png');">
+                        <div class="project-overlay">
+                            <h2>Projet Fournil</h2>
+                            <div class="project-content">
+                                <p>Création d'un site internet permettant la gestion de commandes pour une boulangerie.</p>
+                                <a href="http://localhost:8088/FournilAlsacien/" class="btn">Voir le projet</a>
                             </div>
-                            <p class="schema-caption">Schéma de l'architecture d'Electron.js</p>
                         </div>
-                    <h3>Pourquoi Electron.js ?</h3>
-                    <p>
-                        Electron.js est largement utilisé pour des applications populaires comme Visual Studio Code, Slack, et Discord. Il permet de réutiliser des compétences en développement web pour créer des applications desktop, ce qui en fait un outil puissant et polyvalent.
-                    </p>
-                    <h3>Comparatif Electron.js vs .NET C#</h3>
-        <p>
-            Bien que ces deux technologies permettent de créer des applications desktop, leurs approches diffèrent considérablement. Voici une analyse comparative basée sur différents aspects de développement :
-        </p>
-        
-        <h4>Création et gestion de base de données SQLite</h4>
-        <p>
-            En C#, la création de base de données SQLite nécessite l'importation d'un package NuGet, suivie de l'utilisation de méthodes directes pour la création et l'interaction avec la base de données. Les requêtes sont exécutées dans le programme principal en utilisant des méthodes de classe.
-        </p>
-        <p>
-            Electron.js, quant à lui, utilise des fonctions asynchrones pour interagir avec la base de données en dehors du programme principal. Cette architecture à plusieurs couches diffère de l'approche plus directe de C#.
-        </p>
-        
-        <h4>Génération d'exécutables</h4>
-        <p>
-            Avec .NET C#, la configuration pour générer un exécutable se fait principalement via une interface graphique. Il suffit de passer en mode Release pour générer la solution, ce qui crée automatiquement l'exécutable dans le dossier \bin\Release\.
-        </p>
-        <p>
-            Pour Electron.js, le processus repose sur des scripts et des configurations dans le fichier package.json. Récemment, certaines fonctionnalités de personnalisation (comme l'ajout d'icônes via console PowerShell) ont été modifiées, nécessitant des approches alternatives.
-        </p>
-        
-        <h4>Configuration d'application</h4>
-        <p>
-            Les deux frameworks utilisent des fichiers de configuration différents mais comparables : le fichier .csproj pour .NET C# et le package.json pour Electron.js. Ces fichiers définissent les informations de l'application et les modules à importer.
-        </p>
-        
-        <table class="comparison-table">
-            <thead>
-                <tr>
-                    <th>Aspect</th>
-                    <th>Electron.js</th>
-                    <th>.NET C#</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Langage de programmation</td>
-                    <td>JavaScript/TypeScript</td>
-                    <td>C#</td>
-                </tr>
-                <tr>
-                    <td>Base de données</td>
-                    <td>Approche asynchrone avec plusieurs couches</td>
-                    <td>Méthode de classe plus directe</td>
-                </tr>
-                <tr>
-                    <td>Configuration</td>
-                    <td>Via package.json</td>
-                    <td>Via interface graphique et fichier csproj</td>
-                </tr>
-                <tr>
-                    <td>Multiplateforme</td>
-                    <td>Native (Windows, macOS, Linux)</td>
-                    <td>Avec .NET MAUI ou Xamarin</td>
-                </tr>
-                <tr>
-                    <td>Packaging</td>
-                    <td>Script de build complexe</td>
-                    <td>Mode Release simple</td>
-                </tr>
-                <tr>
-                    <td>Performance</td>
-                    <td>Consommation de ressources plus élevée</td>
-                    <td>Plus performant et léger</td>
-                </tr>
-                <tr>
-                    <td>Courbe d'apprentissage</td>
-                    <td>Facile pour les développeurs web</td>
-                    <td>Nécessite des connaissances en C# et .NET</td>
-                </tr>
-            </tbody>
-        </table>
-        
-        <h3>Cas d'utilisation appropriés</h3>
-        <p><strong>Electron.js est préférable quand :</strong></p>
-        <ul>
-            <li>L'équipe possède déjà des compétences en développement web</li>
-            <li>Le déploiement multiplateforme est une priorité</li>
-            <li>Le développement rapide d'un MVP est nécessaire</li>
-            <li>L'application nécessite une intégration facile avec des services web</li>
-        </ul>
-        
-        <p><strong>.NET C# est préférable quand :</strong></p>
-        <ul>
-            <li>La performance est critique</li>
-            <li>L'application nécessite une intégration étroite avec Windows</li>
-            <li>L'équipe a déjà de l'expérience avec l'écosystème .NET</li>
-            <li>L'application doit gérer des ressources système de manière efficace</li>
-        </ul>
-        
-        <h3>Mes Ressources de Veille</h3>
-        <ul>
-            <li><strong>Site officiel</strong> : <a href="https://www.electronjs.org/" target="_blank">electronjs.org</a></li>
-            <li><strong>GitHub</strong> : <a href="https://github.com/electron/electron" target="_blank">Dépôt Electron.js</a></li>
-            <li><strong>Blogs</strong> : Articles sur Medium et Dev.to.</li>
-            <li><strong>Communauté</strong> : Forums et discussions sur Stack Overflow et Reddit.</li>
-            <li><strong>Aggrégateur de flux RSS</strong> : <a href="https://www.inoreader.com/dashboard"> Inoreader</a></li>
-        </ul>
-        <h3>Dernières Tendances</h3>
-        <ul>
-            <li>Intégration de nouvelles APIs pour améliorer les performances.</li>
-            <li>Amélioration de la sécurité avec des mises à jour régulières.</li>
-            <li>Utilisation croissante dans les outils de développement et de collaboration.</li>
-            <li>Développement d'alternatives plus légères comme Tauri et Neutralino.</li>
-            <li>Focus sur l'optimisation des performances et la réduction de l'empreinte mémoire.</li>
-        </ul>
-        <div class="card">
-            <a href="https://medium.com/codeinflutter/react-native-vs-electron-best-choice-for-app-development-241f6b456bc7" target="_blank"><img src="article1.png" alt="Lire l'article"></a>
-            <div class="card-content">
-                <h3>React Native vs Electron: Best Choice for App Development</h3>
-                <p>Discover the differences between React Native vs Electron and find out which framework is best for your app development needs.</p>
+                    </section>
                 
-            </div>
-        </div>
-        <br>
-        <div class="card">
-            <a href="https://www.lemondeinformatique.fr/actualites/lire-le-framework-neutralino-une-alternative-a-electron-et-nwjs-78339.html#:~:text=Neutralino%2C%20le%20framework%20de%20développement,js%20de%20GitHub." target="_blank"><img src="neutralino.jpg" alt="Lire l'article" ></a>
-            <div class="card-content">
-                <h3>Le framework Neutralino, une alternative à Electron et NW.js ?</h3>
-                <p>Le framework expérimental, Neutralino, pour le développement d'applications multiplateformes avec JavaScript promet une empreinte légère et peut se passer de Node.js.</p>
+                    <!-- Projet 2 -->
+                    <section id="projet2" class="project-section" style="background-image: url('FCOSK06.png');">
+                        <div class="project-overlay">
+                            <h2>Projet Stage 1 - Gestion Licence</h2>
+                            <div class="project-content">
+                                <p>Développement d'une application de gestion de licences des membres du F.C.O.S.K 06 .</p>
+                                <a href="http://localhost:8088/projetFCOSK06/" class="btn">Voir le projet</a>
+                            </div>
+                        </div>
+                    </section>
                 
+                    <!-- Projet 3 -->
+                    <section id="projet3" class="project-section" style="background-image: url('image2.png');">
+                        <div class="project-overlay">
+                            <h2>Projet Criée</h2>
+                            <div class="project-content">
+                                <p>Application de gestion des ventes aux enchères pour l'organisation la criée des cornouailles.</p>
+                                <a href="#" class="btn">Voir le projet</a>
+                            </div>
+                        </div>
+                    </section>
+                
+                    <!-- Projet 4 -->
+                    <section id="projet4" class="project-section" style="background-image: url('far.png');">
+                        <div class="project-overlay">
+                            <h2>Projet Stage 2  BCE</h2>
+                            <div class="project-content">
+                                <p>Développement d'une application de bureau permettant la simulation de bilan de consommation énergétique pour l'entreprise FAR Energy .</p>
+                                <a href="https://github.com/NassimAr02/BCE_FAR_ENERGY/releases/download/1.1.1/bce-1.1.1.Setup.exe" class="btn" download>Voir le projet</a>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <!-- Veille Technologique Section -->
+                <section id="veille" class="veille-section">
+                    <div class="veille-content">
+                        <h2>Veille Technologique : Electron.js</h2>
+                        <div class="veille-text">
+                            <h3>Qu'est-ce qu'Electron.js ?</h3>
+                            <p>
+                                Electron.js est un framework open-source qui permet de développer des applications desktop multiplateformes en utilisant des technologies web (HTML, CSS, JavaScript). Il est basé sur Node.js et Chromium, ce qui permet aux développeurs de créer des applications riches en fonctionnalités pour Windows, macOS et Linux.
+                            </p>
+                            <div class="veille-text">
+                                <h3>Architecture d'Electron.js</h3>
+                                <p>
+                                    Electron.js repose sur une architecture modulaire qui sépare le processus principal (Main Process) des processus de rendu (Renderer Process). Voici un schéma simplifié de son fonctionnement :
+                                </p>
+                                <div class="schema-container">
+                                    <img src="schéma.png" alt="Architecture d'Electron.js" class="schema-image">
+                                    <div class="schema-annotations">
+                                        <div class="annotation" style="top: 10%; left: 20%;" data-tooltip="Module : Gère les fonctionnalités principales."></div>
+                                        <div class="annotation" style="top: 30%; left: 50%;" data-tooltip="Main Process : Gère les processus principaux de l'application."></div>
+                                        <!-- Ajoutez d'autres annotations ici -->
+                                    </div>
+                                    <p class="schema-caption">Schéma de l'architecture d'Electron.js</p>
+                                </div>
+                            <h3>Pourquoi Electron.js ?</h3>
+                            <p>
+                                Electron.js est largement utilisé pour des applications populaires comme Visual Studio Code, Slack, et Discord. Il permet de réutiliser des compétences en développement web pour créer des applications desktop, ce qui en fait un outil puissant et polyvalent.
+                            </p>
+                            <h3>Comparatif Electron.js vs .NET C#</h3>
+                <p>
+                    Bien que ces deux technologies permettent de créer des applications desktop, leurs approches diffèrent considérablement. Voici une analyse comparative basée sur différents aspects de développement :
+                </p>
+                
+                <h4>Création et gestion de base de données SQLite</h4>
+                <p>
+                    En C#, la création de base de données SQLite nécessite l'importation d'un package NuGet, suivie de l'utilisation de méthodes directes pour la création et l'interaction avec la base de données. Les requêtes sont exécutées dans le programme principal en utilisant des méthodes de classe.
+                </p>
+                <p>
+                    Electron.js, quant à lui, utilise des fonctions asynchrones pour interagir avec la base de données en dehors du programme principal. Cette architecture à plusieurs couches diffère de l'approche plus directe de C#.
+                </p>
+                
+                <h4>Génération d'exécutables</h4>
+                <p>
+                    Avec .NET C#, la configuration pour générer un exécutable se fait principalement via une interface graphique. Il suffit de passer en mode Release pour générer la solution, ce qui crée automatiquement l'exécutable dans le dossier \bin\Release\.
+                </p>
+                <p>
+                    Pour Electron.js, le processus repose sur des scripts et des configurations dans le fichier package.json. Récemment, certaines fonctionnalités de personnalisation (comme l'ajout d'icônes via console PowerShell) ont été modifiées, nécessitant des approches alternatives.
+                </p>
+                
+                <h4>Configuration d'application</h4>
+                <p>
+                    Les deux frameworks utilisent des fichiers de configuration différents mais comparables : le fichier .csproj pour .NET C# et le package.json pour Electron.js. Ces fichiers définissent les informations de l'application et les modules à importer.
+                </p>
+                
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Aspect</th>
+                            <th>Electron.js</th>
+                            <th>.NET C#</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Langage de programmation</td>
+                            <td>JavaScript/TypeScript</td>
+                            <td>C#</td>
+                        </tr>
+                        <tr>
+                            <td>Base de données</td>
+                            <td>Approche asynchrone avec plusieurs couches</td>
+                            <td>Méthode de classe plus directe</td>
+                        </tr>
+                        <tr>
+                            <td>Configuration</td>
+                            <td>Via package.json</td>
+                            <td>Via interface graphique et fichier csproj</td>
+                        </tr>
+                        <tr>
+                            <td>Multiplateforme</td>
+                            <td>Native (Windows, macOS, Linux)</td>
+                            <td>Avec .NET MAUI ou Xamarin</td>
+                        </tr>
+                        <tr>
+                            <td>Packaging</td>
+                            <td>Script de build complexe</td>
+                            <td>Mode Release simple</td>
+                        </tr>
+                        <tr>
+                            <td>Performance</td>
+                            <td>Consommation de ressources plus élevée</td>
+                            <td>Plus performant et léger</td>
+                        </tr>
+                        <tr>
+                            <td>Courbe d'apprentissage</td>
+                            <td>Facile pour les développeurs web</td>
+                            <td>Nécessite des connaissances en C# et .NET</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Cas d'utilisation appropriés</h3>
+                <p><strong>Electron.js est préférable quand :</strong></p>
+                <ul>
+                    <li>L'équipe possède déjà des compétences en développement web</li>
+                    <li>Le déploiement multiplateforme est une priorité</li>
+                    <li>Le développement rapide d'un MVP est nécessaire</li>
+                    <li>L'application nécessite une intégration facile avec des services web</li>
+                </ul>
+                
+                <p><strong>.NET C# est préférable quand :</strong></p>
+                <ul>
+                    <li>La performance est critique</li>
+                    <li>L'application nécessite une intégration étroite avec Windows</li>
+                    <li>L'équipe a déjà de l'expérience avec l'écosystème .NET</li>
+                    <li>L'application doit gérer des ressources système de manière efficace</li>
+                </ul>
+                
+                <h3>Mes Ressources de Veille</h3>
+                <ul>
+                    <li><strong>Site officiel</strong> : <a href="https://www.electronjs.org/" target="_blank">electronjs.org</a></li>
+                    <li><strong>GitHub</strong> : <a href="https://github.com/electron/electron" target="_blank">Dépôt Electron.js</a></li>
+                    <li><strong>Blogs</strong> : Articles sur Medium et Dev.to.</li>
+                    <li><strong>Communauté</strong> : Forums et discussions sur Stack Overflow et Reddit.</li>
+                    <li><strong>Aggrégateur de flux RSS</strong> : <a href="https://www.inoreader.com/dashboard"> Inoreader</a></li>
+                </ul>
+                <h3>Dernières Tendances</h3>
+                <ul>
+                    <li>Intégration de nouvelles APIs pour améliorer les performances.</li>
+                    <li>Amélioration de la sécurité avec des mises à jour régulières.</li>
+                    <li>Utilisation croissante dans les outils de développement et de collaboration.</li>
+                    <li>Développement d'alternatives plus légères comme Tauri et Neutralino.</li>
+                    <li>Focus sur l'optimisation des performances et la réduction de l'empreinte mémoire.</li>
+                </ul>
+                <div class="card">
+                    <a href="https://medium.com/codeinflutter/react-native-vs-electron-best-choice-for-app-development-241f6b456bc7" target="_blank"><img src="article1.png" alt="Lire l'article"></a>
+                    <div class="card-content">
+                        <h3>React Native vs Electron: Best Choice for App Development</h3>
+                        <p>Discover the differences between React Native vs Electron and find out which framework is best for your app development needs.</p>
+                        
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <a href="https://www.lemondeinformatique.fr/actualites/lire-le-framework-neutralino-une-alternative-a-electron-et-nwjs-78339.html#:~:text=Neutralino%2C%20le%20framework%20de%20développement,js%20de%20GitHub." target="_blank"><img src="neutralino.jpg" alt="Lire l'article" ></a>
+                    <div class="card-content">
+                        <h3>Le framework Neutralino, une alternative à Electron et NW.js ?</h3>
+                        <p>Le framework expérimental, Neutralino, pour le développement d'applications multiplateformes avec JavaScript promet une empreinte légère et peut se passer de Node.js.</p>
+                        
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <a href="https://medium.com/@nikitinsn6/electron-vs-net-maui-and-other-frameworks-which-one-is-right-for-your-desktop-application-951c34028ccd" target="_blank"><img src="aef3726f-8085-41c9-9a2e-971db33130a2.webp" alt="Lire l'article"></a>
+                    <div class="card-content">
+                        <h3>Electron vs. .NET MAUI and Other Frameworks: Which One is Right for Your Desktop Application?</h3>
+                        <p>Electron has become a popular choice for building cross-platform desktop applications, thanks to its ability to leverage web technologies like HTML, CSS, and JavaScript. However, with the emergence of new frameworks like .NET MAUI, developers now have more options to choose from when building desktop apps. So, which one is right for your project?</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <br>
-        <div class="card">
-            <a href="https://medium.com/@nikitinsn6/electron-vs-net-maui-and-other-frameworks-which-one-is-right-for-your-desktop-application-951c34028ccd" target="_blank"><img src="aef3726f-8085-41c9-9a2e-971db33130a2.webp" alt="Lire l'article"></a>
-            <div class="card-content">
-                <h3>Electron vs. .NET MAUI and Other Frameworks: Which One is Right for Your Desktop Application?</h3>
-                <p>Electron has become a popular choice for building cross-platform desktop applications, thanks to its ability to leverage web technologies like HTML, CSS, and JavaScript. However, with the emergence of new frameworks like .NET MAUI, developers now have more options to choose from when building desktop apps. So, which one is right for your project?</p>
-            </div>
-        </div>
-    </div>
-</div>
         </section>
 
 
