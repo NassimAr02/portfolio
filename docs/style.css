@@ -363,6 +363,13 @@ body.light-mode {
     color: #4ec9b0;
 }
 
+.veille-text h4 {
+    font-size: 1.5rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #4ec9b0;
+}
+
 .veille-text p {
     font-size: 1.2rem;
     line-height: 1.8;
@@ -458,4 +465,86 @@ body.light-mode {
 .card-content p {
     font-size: 1.1rem;
     margin-bottom: 20px;
+}
+
+/* Tableau comparatif */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.comparison-table thead th {
+    background-color: #4ec9b0;
+    color: #1e1e1e;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.comparison-table tbody td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #3a3a3a;
+    font-size: 1.1rem;
+}
+
+.comparison-table tbody tr {
+    background-color: #2a2a2a;
+    transition: background-color 0.3s ease;
+}
+
+.comparison-table tbody tr:hover {
+    background-color: #3e3e3e;
+}
+
+.comparison-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Section pour le code */
+.code-example {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    overflow-x: auto;
+}
+
+.code-example pre {
+    margin: 0;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #d4d4d4;
+}
+
+.code-example code {
+    display: block;
+    padding: 0;
+}
+
+/* Highlights pour le code */
+.code-example .keyword {
+    color: #569cd6;
+}
+
+.code-example .string {
+    color: #ce9178;
+}
+
+.code-example .comment {
+    color: #6a9955;
+}
+
+.code-example .method {
+    color: #dcdcaa;
+}
+
+.code-example .type {
+    color: #4ec9b0;
 }
