@@ -131,52 +131,52 @@
             </div>
         </section>
 
-                <!-- Projects Section -->
-                <section id="projets">
-                    <!-- Projet 1 -->
-                    <section id="projet1" class="project-section" style="background-image: url('connexion.png');">
-                        <div class="project-overlay">
-                            <h2>Projet Fournil</h2>
-                            <div class="project-content">
-                                <p>Création d'un site internet permettant la gestion de commandes pour une boulangerie.</p>
-                                <a href="http://localhost:8088/FournilAlsacien/" class="btn">Voir le projet</a>
-                            </div>
-                        </div>
-                    </section>
-                
-                    <!-- Projet 2 -->
-                    <section id="projet2" class="project-section" style="background-image: url('FCOSK06.png');">
-                        <div class="project-overlay">
-                            <h2>Projet Stage 1 - Gestion Licence</h2>
-                            <div class="project-content">
-                                <p>Développement d'une application de gestion de licences des membres du F.C.O.S.K 06 .</p>
-                                <a href="http://localhost:8088/projetFCOSK06/" class="btn">Voir le projet</a>
-                            </div>
-                        </div>
-                    </section>
-                
-                    <!-- Projet 3 -->
-                    <section id="projet3" class="project-section" style="background-image: url('image2.png');">
-                        <div class="project-overlay">
-                            <h2>Projet Criée</h2>
-                            <div class="project-content">
-                                <p>Application de gestion des ventes aux enchères pour l'organisation la criée des cornouailles.</p>
-                                <a href="#" class="btn">Voir le projet</a>
-                            </div>
-                        </div>
-                    </section>
-                
-                    <!-- Projet 4 -->
-                    <section id="projet4" class="project-section" style="background-image: url('far.png');">
-                        <div class="project-overlay">
-                            <h2>Projet Stage 2  BCE</h2>
-                            <div class="project-content">
-                                <p>Développement d'une application de bureau permettant la simulation de bilan de consommation énergétique pour l'entreprise FAR Energy .</p>
-                                <a href="https://github.com/NassimAr02/BCE_FAR_ENERGY/releases/download/1.1.1/bce-1.1.1.Setup.exe" class="btn" download>Voir le projet</a>
-                            </div>
-                        </div>
-                    </section>
-                </section>
+                    <!-- Projects Section -->
+        <section id="projets">
+            <!-- Projet 1 -->
+            <section id="projet1" class="project-section" style="background-image: url('connexion.png');">
+                <div class="project-overlay">
+                    <h2>Projet Fournil</h2>
+                    <div class="project-content">
+                        <p>Création d'un site internet permettant la gestion de commandes pour une boulangerie.</p>
+                        <a href="http://localhost:8088/FournilAlsacien/" class="btn">Voir le projet</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projet 2 -->
+            <section id="projet2" class="project-section" style="background-image: url('FCOSK06.png');">
+                <div class="project-overlay">
+                    <h2>Projet Stage 1 - Gestion Licence</h2>
+                    <div class="project-content">
+                        <p>Développement d'une application de gestion de licences des membres du F.C.O.S.K 06 .</p>
+                        <a href="http://localhost:8088/projetFCOSK06/" class="btn">Voir le projet</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projet 3 -->
+            <section id="projet3" class="project-section" style="background-image: url('image2.png');">
+                <div class="project-overlay">
+                    <h2>Projet Criée</h2>
+                    <div class="project-content">
+                        <p>Application de gestion des ventes aux enchères pour l'organisation la criée des cornouailles.</p>
+                        <a href="#" class="btn">Voir le projet</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projet 4 -->
+            <section id="projet4" class="project-section" style="background-image: url('far.png');">
+                <div class="project-overlay">
+                    <h2>Projet Stage 2  BCE</h2>
+                    <div class="project-content">
+                        <p>Développement d'une application de bureau permettant la simulation de bilan de consommation énergétique pour l'entreprise FAR Energy .</p>
+                        <a href="https://github.com/NassimAr02/BCE_FAR_ENERGY/releases/download/1.1.1/bce-1.1.1.Setup.exe" class="btn" download>Voir le projet</a>
+                    </div>
+                </div>
+            </section>
+        </section>
 
                 <!-- Veille Technologique Section -->
                 <section id="veille" class="veille-section">
@@ -398,8 +398,8 @@
             }
         });
 
-        // Scroll Animations
-        document.addEventListener('scroll', function() {
+        // Ajoutez cette fonction pour vérifier la visibilité des sections
+        function checkVisibility() {
             const sections = document.querySelectorAll('.project-section');
             sections.forEach(section => {
                 const sectionTop = section.getBoundingClientRect().top;
@@ -407,7 +407,13 @@
                     section.classList.add('visible');
                 }
             });
-        });
+        }
+
+        // Vérifiez la visibilité au chargement de la page
+        document.addEventListener('DOMContentLoaded', checkVisibility);
+
+        // Gardez également la vérification lors du défilement
+        document.addEventListener('scroll', checkVisibility);
     </script>
 </body>
 </html>
